@@ -1,7 +1,7 @@
 {
-    "name": "v4l2camera",
+    "name": "@joepie91/v4l2camera",
     "version": "1.0.4",
-    "description": "Capturing images from USB(UVC) webcam on linux machines",
+    "description": "Capturing images from USB(UVC) webcam on linux machines (a fork that fixes the time.h bug)",
     "keywords": [
         "linux",
         "camera",

@@ -1,5 +1,9 @@
 # node-v4l2camera
 
+__IMPORTANT NOTE:__ This is a *fork* of the [original `node-v4l2camera` module](https://github.com/bellbind/node-v4l2camera). It exists only to fix bellbind/node-v4l2camera#30, which hasn't been fixed upstream yet. This fork will not receive any further updates, once the upstream repository has fixed the issue!
+
+---
+
 Capturing images from USB(UVC) webcam on linux machines.
 
 ## Requirements
@@ -14,7 +18,7 @@ Capturing images from USB(UVC) webcam on linux machines.
 On linux machines:
 
 ```bash
-npm install v4l2camera
+npm install @joepie91/v4l2camera
 ```
 
 - package details: https://npmjs.org/package/v4l2camera
@@ -52,7 +56,7 @@ Initializing and Configuration API
     - `format.width`: Frame width
     - `format.height`: Frame height
     - `format.interval.numerator` and `format.interval.denominator`
-      : Capturing interval per `numerator/denominator` seconds 
+      : Capturing interval per `numerator/denominator` seconds
       (e.g. 30fps is 1/30)
 - `cam.configSet(format)`
   : Set capture `width`, `height`, `interval` per `numerator/denominator` sec
@@ -96,7 +100,7 @@ Control API
       `min <= v` and `v <= max` and `(v - min) % step === 0`
     - `control.default`: default value of the control
     - `control.flags`: Several bool flags of the controls
-    - `control.menu`: Array of items. 
+    - `control.menu`: Array of items.
       A control value is the index of the menu item when type is `"menu"`.
 
 ## Build for Development
@@ -124,5 +128,5 @@ cd ../..
 
 ## Licenses
 
-[MIT](http://opensource.org/licenses/MIT) and 
+[MIT](http://opensource.org/licenses/MIT) and
 [LGPL-3.0](http://opensource.org/licenses/LGPL-3.0) dual
